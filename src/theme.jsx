@@ -8,7 +8,11 @@ export const getDesignTokens = (mode) => ({
     mode,
     ...(mode === "light"
       ? {
+
           // palette values for light mode
+          mycolor : {
+            main: '#F6F9FC'
+          },
           text: {
             primary: "#2B3445",
           },
@@ -22,6 +26,9 @@ export const getDesignTokens = (mode) => ({
         }
       : {
           // palette values for dark mode
+          mycolor : {
+            main: '#252B32'
+          },
           neutral: {
             main: "#64748B",
           },

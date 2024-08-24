@@ -1,0 +1,91 @@
+{
+  "hash": "beb306f3",
+  "configHash": "95a35169",
+  "lockfileHash": "b8355750",
+  "browserHash": "0ddaccc3",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "5b6736bb",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "8fdcc680",
+      "needsInterop": true
+    },
+    "@mui/material": {
+      "src": "../../node_modules/@mui/material/index.js",
+      "file": "@mui_material.js",
+      "fileHash": "7252919e",
+      "needsInterop": false
+    },
+    "@mui/material/styles": {
+      "src": "../../node_modules/@mui/material/styles/index.js",
+      "file": "@mui_material_styles.js",
+      "fileHash": "33927162",
+      "needsInterop": false
+    },
+    "@mui/material/colors": {
+      "src": "../../node_modules/@mui/material/colors/index.js",
+      "file": "@mui_material_colors.js",
+      "fileHash": "e08e71b4",
+      "needsInterop": false
+    },
+    "@mui/icons-material": {
+      "src": "../../node_modules/@mui/icons-material/esm/index.js",
+      "file": "@mui_icons-material.js",
+      "fileHash": "faa19dcd",
+      "needsInterop": false
+    },
+    "@mui/icons-material/Facebook": {
+      "src": "../../node_modules/@mui/icons-material/Facebook.js",
+      "file": "@mui_icons-material_Facebook.js",
+      "fileHash": "dbfeb631",
+      "needsInterop": true
+    },
+    "@mui/icons-material/X": {
+      "src": "../../node_modules/@mui/icons-material/X.js",
+      "file": "@mui_icons-material_X.js",
+      "fileHash": "c82ab8eb",
+      "needsInterop": true
+    },
+    "@mui/icons-material/Instagram": {
+      "src": "../../node_modules/@mui/icons-material/Instagram.js",
+      "file": "@mui_icons-material_Instagram.js",
+      "fileHash": "2cef196a",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-ZIYUGMGG": {
+      "file": "chunk-ZIYUGMGG.js"
+    },
+    "chunk-KCRMUEHX": {
+      "file": "chunk-KCRMUEHX.js"
+    },
+    "chunk-4FZJK37A": {
+      "file": "chunk-4FZJK37A.js"
+    },
+    "chunk-CMJN5XIX": {
+      "file": "chunk-CMJN5XIX.js"
+    },
+    "chunk-S6HD5AAM": {
+      "file": "chunk-S6HD5AAM.js"
+    },
+    "chunk-O3APRV24": {
+      "file": "chunk-O3APRV24.js"
+    },
+    "chunk-65KY755N": {
+      "file": "chunk-65KY755N.js"
+    },
+    "chunk-5QLPQRS5": {
+      "file": "chunk-5QLPQRS5.js"
+    },
+    "chunk-V4OQ3NZ2": {
+      "file": "chunk-V4OQ3NZ2.js"
+    }
+  }
+}
