@@ -13,7 +13,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
-
 import MenuIcon from "@mui/icons-material/Menu";
 import WindowIcon from "@mui/icons-material/Window";
 import KeyboardArrowRightOutlinedIcon from "@mui/icons-material/KeyboardArrowRightOutlined";
@@ -68,7 +67,9 @@ const Buttombar = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        mt:5,
+        mt: 5,
+        position: "relative", // Ensure positioning context
+        zIndex: 10, // Higher z-index for Buttombar
       }}
     >
       <Box>
@@ -103,6 +104,7 @@ const Buttombar = () => {
             ".MuiPaper-root": {
               width: 222,
               bgcolor: theme.palette.mycolor.main,
+              zIndex: 1500, // High z-index for Menu
             },
           }}
         >
@@ -134,20 +136,19 @@ const Buttombar = () => {
       </Box>
 
       {useMediaQuery('(min-width:1200px)' ) && (
-       <Stack direction={"row"} alignItems={"center"} gap={4}>
-       <Links title={"home"}/>
-      <Links title={"Mega Menu"}/>
-      <Links title={"Full Screen Menu"}/>
-      <Links title={"pages"}/>
-      <Links title={"User Account"}/>
-      <Links title={"Vendor Account"}/>
-
-       </Stack>
+        <Stack direction={"row"} alignItems={"center"} gap={4}>
+          <Links title={"home"}/>
+          <Links title={"Mega Menu"}/>
+          <Links title={"Full Screen Menu"}/>
+          <Links title={"pages"}/>
+          <Links title={"User Account"}/>
+          <Links title={"Vendor Account"}/>
+        </Stack>
       )}
-          {useMediaQuery('(max-width:1200px)') &&
+      {useMediaQuery('(max-width:1200px)') &&
         (<IconButton onClick={toggleDrawer("top", true)}>
-        <MenuIcon />
-      </IconButton>)}
+          <MenuIcon />
+        </IconButton>)}
       <Drawer
         anchor={"top"}
         open={state["top"]}
@@ -155,6 +156,7 @@ const Buttombar = () => {
         sx={{
           ".MuiPaper-root.css-1sozasi-MuiPaper-root-MuiDrawer-paper": {
             height: "100%",
+            zIndex: 1500, // High z-index for Drawer
           },
         }}
       >
@@ -173,6 +175,7 @@ const Buttombar = () => {
             <Close />
           </IconButton>
 
+          {/* Drawer Links */}
           {[
             { mainLink: "Home", subLink: ["Link1", "Link2", "Link3"] },
             { mainLink: "Mega Menu", subLink: ["Link1", "Link2", "Link3"] },
