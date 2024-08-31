@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product"
+    "displayName": "product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,11 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "productimg": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "productTitle": {
       "type": "string",
@@ -38,7 +40,8 @@
       "type": "enumeration",
       "enum": [
         "men",
-        "women"
+        "women",
+        "electronics"
       ],
       "required": true
     }
